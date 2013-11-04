@@ -15,6 +15,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+  // UIImage *tabbarView = [UIImage imageNamed:@"tabbar.png"];
+ //   UIImage * indicatorImage = [UIImage imageNamed:@"selection-tab2.png"];
+   // [[UITabBar appearance] setBackgroundImage:tabbarView];
+  //   [[UITabBar appearance] setSelectionIndicatorImage:indicatorImage];
+    [[UINavigationBar appearance]  setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+        [UIFont systemFontOfSize:22], UITextAttributeFont,
+        [UIColor blackColor],UITextAttributeTextColor,nil
+        ]];
+   // [[UINavigationBar appearance] setBarStyle:UIBarStyleBlackTranslucent];
+  //  [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"woodnavbarbackground"]];
+    [[UITabBar appearance] setSelectedImageTintColor:[UIColor whiteColor]];
+    [[UITabBarItem appearance]    setTitleTextAttributes:[NSDictionary dictionaryWithObject:[UIColor blackColor] forKey:UITextAttributeTextColor] forState:UIControlStateSelected];
+    //[[UIBarButtonItem appearance] setBackgroundImage:indicatorImage  forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    //[[UITabBarItem appearance] setBackgroundImage: [UIImage imageNamed:@"selection-tab"]];
+
     return YES;
 }
 							

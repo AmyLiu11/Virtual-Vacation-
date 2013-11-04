@@ -16,7 +16,6 @@
 #define FLICKR_PHOTO_OWNER @"ownername"
 #define FLICKR_PHOTO_PLACE_NAME @"derived_place"
 #define FLICKR_TAGS @"tags"
-#define FLICKR_PLACE_ID @"place_id"
 
 typedef enum {
 	FlickrPhotoFormatSquare = 1,
@@ -26,7 +25,7 @@ typedef enum {
 
 @interface FlickrFetcher : NSObject
 
-+ (NSArray *)topPlaces;//get an array of the most popular Flickr photo spots in last day or so,it is an array of NSDictionarys which contain information about each place.
++ (NSArray *)topPlaces;
 + (NSArray *)photosInPlace:(NSDictionary *)place maxResults:(int)maxResults;
 + (NSURL *)urlForPhoto:(NSDictionary *)photo format:(FlickrPhotoFormat)format;
 + (NSArray *)recentGeoreferencedPhotos;

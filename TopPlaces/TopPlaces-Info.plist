@@ -9,9 +9,13 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFiles</key>
-	<array/>
+	<array>
+		<string>iPhone_Glossy_Icon_map</string>
+		<string>iPhoneRetina_Glossy_Icon_map</string>
+		<string>vvIcon</string>
+	</array>
 	<key>CFBundleIdentifier</key>
-	<string>lxf.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.qqlivedzd.live4iphone</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
